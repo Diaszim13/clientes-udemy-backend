@@ -53,6 +53,19 @@
 			<artifactId>spring-data-jpa</artifactId>
 			<version>2.6.0</version>
 		</dependency>
+		<dependency>
+			<groupId>org.jetbrains</groupId>
+			<artifactId>annotations</artifactId>
+			<version>RELEASE</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.github.japgolly.microlibs</groupId>
+			<artifactId>nonempty_2.13</artifactId>
+			<version>4.0.0</version>
+			<scope>compile</scope>
+		</dependency>
+
 
 	</dependencies>
 

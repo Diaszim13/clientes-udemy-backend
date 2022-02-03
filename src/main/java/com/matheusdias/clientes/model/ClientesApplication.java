@@ -1,5 +1,6 @@
-package com.matheusdias.clientes;
+package com.matheusdias.clientes.model;
 
+import com.matheusdias.clientes.model.controllers.ClienteController;
 import com.matheusdias.clientes.model.entity.Clientes;
 import com.matheusdias.clientes.model.repository.ClientesRepository;
 import org.springframework.beans.factory.annotation.Autowired;

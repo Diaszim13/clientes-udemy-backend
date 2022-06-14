@@ -2,7 +2,7 @@ package com.matheusdias.clientes.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
-
+import org.jetbrains.annotations.NotNull;
 import javax.persistence.*;
 import java.time.LocalDate;
 
@@ -20,12 +20,14 @@ public class Clientes {
     private Long id;
 
     @Column(nullable = false,name = "nome", length = 100)
+    @NotNull
     private String nome;
 
     @Column(nullable = false, name = "CPF", length = 11)
+    @NotNull
     private String cpf;
 
-    @Column(name = "Data_cadastro")
+    @Column(name = "Data_cadastro", updatable = false)
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCadastro;
 

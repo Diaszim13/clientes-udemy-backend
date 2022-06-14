@@ -20,10 +20,10 @@ public class InternacionazacaoConfig {
         return messageSource;
     }
 
-//    @Bean
-//    public LocalValidatorFactoryBean validatorFactoryBean() {
-//        LocalValidatorFactoryBean bean = new LocalValidatorFactoryBean();
-//        bean.setValidationMessageSource(messageSource());
-//        return bean;
-//    }
+    @Bean
+    public LocalValidatorFactoryBean validatorFactoryBean() {
+        LocalValidatorFactoryBean bean = new LocalValidatorFactoryBean();
+        bean.setValidationMessageSource(messageSource());
+            return bean;
+    }
 }

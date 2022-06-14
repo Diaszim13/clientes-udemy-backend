@@ -1,6 +1,5 @@
 package com.matheusdias.clientes.model;
 
-import com.matheusdias.clientes.model.controllers.ClienteController;
 import com.matheusdias.clientes.model.entity.Clientes;
 import com.matheusdias.clientes.model.repository.ClientesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,11 +19,7 @@ public class ClientesApplication extends SpringBootServletInitializer {
 	@Bean
 	public CommandLineRunner run() {
 		return args -> {
-//			Clientes clientes = Clientes.builder().cpf("99999999999").nome("TESTE").build();
-			Clientes clientes = new Clientes();
-			clientes.setCpf("99999999999");
-			clientes.setNome("TESTE");
-			System.out.println(clientes);
+			Clientes clientes = Clientes.builder().cpf("99999999999").nome("TESTE").build();
 //			repository.save(clientes);
 		};
 	}
